@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.holler.hollerapp"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "2.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    provided 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+    compile 'com.android.support:recyclerview-v7:+'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    compile 'com.splitwise:tokenautocomplete:2.0.4@aar'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.0'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    compile 'com.google.code.gson:gson:2.5'
+    compile project(':chipsEditTextLibrary')
+    compile project(':rangeseekbar')
+    compile files('libs/picasso-2.5.2.jar')
+}

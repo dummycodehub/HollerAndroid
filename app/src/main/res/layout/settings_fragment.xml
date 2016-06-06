@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#DCDCDC"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:id="@+id/first_layout"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleTextView"
+                    android:text="Discovery"
+                    android:textColor="#808080"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/discoverySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:theme="@style/RatingBar"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:id="@+id/saperatorView"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/discoverySwitch"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seatchTextView"
+                    android:text="Search Distance"
+                    android:textColor="#808080"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/saperatorView"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seatchDistanceTextView"
+                    android:layout_alignParentRight="true"
+                    android:text="72 Km."
+                    android:textColor="#808080"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/saperatorView"
+                    android:gravity="left"/>
+
+                <SeekBar
+                    android:id="@+id/seekBarDistance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/seatchDistanceTextView"
+                    android:theme="@style/RatingBar"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change your swipe location to see Tinder members in other cities"
+                    android:textColor="#808080"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/seekBarDistance"
+                    android:gravity="left"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notification"
+                    android:textColor="#808080"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="left"/>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/notificationSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:theme="@style/RatingBar"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/swipe"
+                    android:text="Swipping in"
+                    android:textColor="#808080"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="left"/>
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/swipe"
+                    android:id="@+id/addressImage"
+                    android:src="@drawable/post_job_address_image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/currentLocationTextView"
+                    android:text="My Current Location"
+                    android:textColor="#808080"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/addressImage"
+                    android:layout_below="@+id/swipe"
+                    />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/swippingInSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/swipe"
+                    android:checked="true"
+                    android:theme="@style/RatingBar"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:id="@+id/saperatorView1"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/addressImage"
+                    />
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/saperatorView1"
+                    android:id="@+id/newAddressImage"
+                    android:src="@drawable/post_job_address_image"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/buttonAddNewLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="#FF5722"
+                    android:textSize="20dp"
+                    android:stateListAnimator="@null"
+                    android:textAllCaps="false"
+                    android:text="Add a New Location"
+                    android:layout_toRightOf="@+id/newAddressImage"
+                    android:layout_below="@+id/saperatorView1"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:id="@+id/saperatorView2"
+                    android:layout_height="1dp"
+                    android:background="#c0c0c0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_below="@+id/newAddressImage"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swipping in"
+                    android:textColor="#808080"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/swippingInValueTextView"
+                    android:text="My Current Location"
+                    android:textColor="#FF5722"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change your swipe location to see Tinder members in other cities"
+                    android:textColor="#808080"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_below="@+id/swippingInValueTextView"
+                    android:gravity="left"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rangeValue"
+                    android:text="Money Range"
+                    android:textColor="#808080"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="left"/>
+
+                <org.florescu.android.rangeseekbar.RangeSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rangeValue"
+                    android:id="@+id/seekbar"
+                    rsb:absoluteMaxValue="30"
+                    rsb:absoluteMinValue="0"
+                    rsb:thumbDisabled="@drawable/custom_slider_thumb"
+                    rsb:thumbNormal="@drawable/custom_slider_thumb"
+                    rsb:thumbPressed="@drawable/custom_slider_thumb"
+                    rsb:thumbShadow="true"
+                    rsb:thumbShadowBlur="3dp"
+                    rsb:thumbShadowColor="@color/primary_material_light"
+                    rsb:thumbShadowXOffset="1dp"
+                    rsb:thumbShadowYOffset="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="20dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

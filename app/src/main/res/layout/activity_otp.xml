@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:alpha="0.9"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:background="@android:color/white">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/otp_background"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleLabel"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text="Waiting to automatically detect an sms sent to"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mobileNumberLabel"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_below="@+id/titleLabel"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="+91-9930297373"/>
+
+                <Models.CircleProgressBar
+                    android:id="@+id/custom_progressBar"
+                    android:layout_below="@+id/mobileNumberLabel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="25dp"
+                    app:progress="40"
+                    app:progressBarThickness="10dp"/>
+
+                <TextView android:id="@+id/timerLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF5722"
+                    android:layout_below="@+id/custom_progressBar"
+                    android:layout_marginTop="-70dp"
+                    android:text="00:40"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="24dp"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/orImage"
+                    android:layout_below="@+id/custom_progressBar"
+                    android:src="@drawable/otp_or_image"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/manualEntryLabel"
+                    android:layout_below="@+id/orImage"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text="Enter the code manually"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/enterCodeEditText"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@+id/manualEntryLabel"
+                    android:background="@drawable/otp_manual_entry_background"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="eg.2320"
+                    />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/button_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#FF5722"
+                    android:textSize="18dp"
+                    android:background="@android:color/transparent"
+                    android:layout_below="@+id/enterCodeEditText"
+                    android:layout_marginTop="20dp"
+                    android:text="RESEND OTP"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

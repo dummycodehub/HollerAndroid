@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="290dp"
+                android:id="@+id/top_bg_layout">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/user_profile_background"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/search_bg_view"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/login_background"
+                    android:id="@+id/user_profile"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-25dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_below="@+id/user_profile"
+                    android:layout_toRightOf="@+id/user_profile"
+                    android:id="@+id/verificationIcon"
+                    android:src="@drawable/user_profile_verified"/>
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/user_profile"
+                    android:text="JOHN DOE"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="#FF5722"/>
+
+                <TextView
+                    android:id="@+id/user_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/user_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="Dhaka, Bangladesh"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/user_name"
+                    android:layout_toLeftOf="@+id/user_address"
+                    android:id="@+id/locationIcon"
+                    android:src="@drawable/user_profile_location"/>
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/user_name"
+                    android:theme="@style/redbar"
+                    android:isIndicator="false"
+                    android:numStars="5"
+                    android:stepSize="1.0"
+                    android:rating="5.0" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_toLeftOf="@+id/user_address"
+                    android:id="@+id/phoneIcon"
+                    android:src="@drawable/user_profile_phone"/>
+                <TextView
+                    android:id="@+id/user_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_toRightOf="@+id/phoneIcon"
+                    android:layout_marginLeft="5dp"
+                    android:text="+91 9930297373"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"/>
+                <TextView
+                    android:id="@+id/user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/user_phone_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/phoneIcon"
+                    android:layout_marginLeft="5dp"
+
+                    android:text="xyz123@gmail.com"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tags_layout">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/user_profile_tags_background"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/tagsSeparator"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tags_image"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bio_layout">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/user_profile_bio_background"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"/>
+                <TextView
+                    android:id="@+id/job_description"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:text="I want to put an EditText item under each of the four TextView items. The EditText items visibility will be set to INVISIBLE first, and then at the touch of a button. "
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

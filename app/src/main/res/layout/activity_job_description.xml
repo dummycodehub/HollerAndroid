@@ -1,0 +1,393 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.holler.com.PostJobActivity">
+
+    <include
+        android:id="@+id/tool_bar_job_description"
+        layout="@layout/tool_bar"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tool_bar_job_description"
+        android:layout_marginTop="-4dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/job_description_profile_background">
+
+            <TextView
+                android:id="@+id/job_description_title"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF5722"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/job_description_profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="icon"
+                android:layout_below="@+id/job_description_title"
+                android:src="@drawable/job_description_profile_image"
+                />
+
+            <TextView
+                android:id="@+id/job_description_profile_name"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:text="John Doe"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:layout_below="@+id/job_description_title"
+                android:layout_toRightOf="@+id/job_description_profile_image"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/button_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/job_description_amount_background"
+                />
+
+        </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/tool_bar_shadow" />
+
+            <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/job_description_content_background">
+
+            <TextView
+                android:id="@+id/job_description_sub_title"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:text="Job Description"
+                android:layout_height="wrap_content"
+                android:textColor="#FF5722"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/job_description_content"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/job_description_sub_title"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addressLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/job_description_bg">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tool_bar_shadow" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:id="@+id/addressInnerLayout"
+                android:background="@drawable/job_description_content_background">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/locationIcon"
+                    android:src="@drawable/post_job_address_image"/>
+                <TextView
+                    android:id="@+id/job_description_address_title"
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:text="Address"
+                    android:layout_toRightOf="@+id/locationIcon"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/button_map"
+                    android:src="@drawable/job_description_map_icon"/>
+
+                <TextView
+                    android:id="@+id/job_address"
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/button_map"
+                    android:layout_toRightOf="@+id/locationIcon"
+                    android:layout_below="@+id/job_description_address_title"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/addressBottomSaperator"
+                android:layout_height="1dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/addressInnerLayout"
+                android:background="@drawable/tool_bar_shadow" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="15dp"
+                android:layout_below="@+id/addressBottomSaperator"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/calendarIcon"
+                    android:src="@drawable/post_job_address_image"/>
+                <TextView
+                    android:id="@+id/job_description_date"
+                    android:paddingTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:text="Date :"
+                    android:layout_toRightOf="@+id/calendarIcon"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/job_date"
+                    android:paddingTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/job_description_date"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/timeIcon"
+                    android:layout_below="@+id/calendarIcon"
+                    android:src="@drawable/job_description_time"/>
+                <TextView
+                    android:id="@+id/job_description_time"
+                    android:paddingTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:text="Time :"
+                    android:layout_toRightOf="@+id/timeIcon"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calendarIcon"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/job_time"
+                    android:paddingTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/calendarIcon"
+                    android:layout_toRightOf="@+id/job_description_time"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/genderIcon"
+                    android:layout_below="@+id/timeIcon"
+                    android:src="@drawable/job_description_gender"/>
+                <TextView
+                    android:id="@+id/job_description_gender"
+                    android:paddingTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:text="Gender :"
+                    android:layout_toRightOf="@+id/timeIcon"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/timeIcon"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/job_gender"
+                    android:paddingTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/timeIcon"
+                    android:layout_toRightOf="@+id/job_description_gender"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/specialNotesLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressLayout"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/job_description_content_background">
+
+                <TextView
+                    android:id="@+id/job_description_special_notes_title"
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:text="Special Notes"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF5722"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/specialNotesSeparator"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/job_description_special_notes_title"
+                    android:background="#FF5722" />
+
+                <TextView
+                    android:id="@+id/job_special_notes"
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/specialNotesSeparator"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/tagsLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:layout_below="@+id/specialNotesLayout"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/job_description_content_background">
+
+                <TextView
+                    android:id="@+id/job_description_tags"
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:text="Tags"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF5722"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/tagsSeparator"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/job_description_tags"
+                    android:background="#FF5722" />
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tagsSeparator"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tags_image"/>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/showMoreLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            >
+            <Button
+                android:id="@+id/button_showMore"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Show More"
+                android:textColor="@android:color/darker_gray"
+                android:background="@drawable/job_description_show_more_background"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/showMoreLayout"
+                >
+                <LinearLayout android:orientation="horizontal"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:weightSum="1.0" >
+                    <Button
+                        android:id="@+id/button_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accept"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.5"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/job_description_accept"/>
+                    <Button
+                        android:id="@+id/buttonConnect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connect"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.5"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/job_description_connect"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

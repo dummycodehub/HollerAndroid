@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notification_sender_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="icon"
+        android:src="@drawable/login_background"
+        />
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Not sure who to award? John Doe, currently best for this work"
+        android:layout_toRightOf="@+id/notification_sender_image"
+        android:layout_alignBaseline="@+id/sub_category_image"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/notification_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="5 min ago"
+        android:layout_below="@+id/notification_text"
+        android:layout_toRightOf="@+id/notification_sender_image"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textSize="14dp" />
+
+</RelativeLayout>

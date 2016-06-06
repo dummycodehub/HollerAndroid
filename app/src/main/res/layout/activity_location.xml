@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+
+    <include
+        android:id="@+id/tool_bar_location"
+        layout="@layout/tool_bar"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/tool_bar_shadow"
+        android:layout_below="@+id/tool_bar_location"/>
+
+    <SearchView
+        android:id="@+id/placesSearchView"
+        android:layout_width="fill_parent"
+        android:queryHint="Enter Address"
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tool_bar_location"
+        android:layout_height="50dp"></SearchView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentLocationButton"
+        android:layout_below="@+id/placesSearchView"
+        android:layout_marginTop="20dp"
+        android:text="Get My Current Location"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/button_continue"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_design"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:text="Continue"/>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/currentLocationButton"
+        class="com.google.android.gms.maps.MapFragment" />
+
+</RelativeLayout> 

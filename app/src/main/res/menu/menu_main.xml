@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_home"
+            android:checked="true"
+            android:icon="@android:drawable/sym_def_app_icon"
+            android:title="Home"/>
+        <item
+            android:id="@+id/drawer_my_job"
+            android:icon="@drawable/menu_my_job"
+            android:title="My Job"/>
+        <item
+            android:id="@+id/drawer_post_job"
+            android:icon="@drawable/menu_post_a_job"
+            android:title="Post Job"/>
+        <item
+            android:id="@+id/drawer_share_holler"
+            android:icon="@drawable/menu_share"
+            android:title="Share Holler"/>
+        <item
+            android:id="@+id/drawer_call_holler"
+            android:icon="@drawable/menu_call_holler"
+            android:title="Call Holler"/>
+        <item
+            android:id="@+id/drawer_notification"
+            android:icon="@drawable/menu_notfication"
+            android:title="Notification"/>
+        <item
+            android:id="@+id/drawer_about"
+            android:icon="@drawable/menu_about"
+            android:title="About"/>
+        <item
+            android:id="@+id/drawer_settings"
+            android:icon="@drawable/menu_setting"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/drawer_faq_help"
+            android:icon="@drawable/menu_faq"
+            android:title="FAQ and Help"/>
+        <item
+            android:id="@+id/drawer_sign_out"
+            android:icon="@drawable/menu_signout"
+            android:title="Sign Out"/>
+    </group>
+</menu>

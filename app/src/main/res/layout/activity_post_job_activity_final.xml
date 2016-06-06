@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.holler.com.PostJobActivityFinal">
+
+    <include
+        android:id="@+id/tool_bar_post_job_final"
+        layout="@layout/tool_bar"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleTextView"
+        android:text="POST A JOB"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:background="@drawable/psot_job_title_bg"
+        android:layout_below="@+id/tool_bar_post_job_final"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rupeeView"
+        android:background="@drawable/post_job_gender_bg"
+        android:layout_below="@+id/titleTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/post_job_rupee"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:background="#c0c0c0"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Spinner
+        android:id="@+id/rupee_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textSize="14dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:id="@+id/specialNotesEditText"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_below="@+id/rupeeView"
+        android:background="@drawable/post_job_input_bg"
+        android:gravity="top"
+        android:textSize="14dp"
+        android:inputType="textMultiLine"
+        android:hint="Special Notes"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/postJobButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_design"
+        android:padding="12dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/specialNotesEditText"
+        android:text="HOLLER"/>
+
+</RelativeLayout>

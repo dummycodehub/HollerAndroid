@@ -1,0 +1,44 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- The main content view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar instead of ActionBar so the drawer can slide on top -->
+        <include
+            android:id="@+id/tool_bar_home"
+            layout="@layout/tool_bar"/>
+
+        <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/tool_bar_shadow" /> -->
+        <!-- Real content goes here -->
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- The navigation drawer -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="?attr/colorPrimaryDark"
+        app:headerLayout="@layout/navigation_header"
+        app:itemTextColor="@android:color/white"
+        app:itemIconTint="@android:color/white"
+        app:menu="@menu/menu_main"/>
+
+</android.support.v4.widget.DrawerLayout>

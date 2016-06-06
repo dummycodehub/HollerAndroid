@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="@drawable/jobs_display_background">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/job_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true">
+    </ImageView>
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/job_title"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:text="Wedding Photography"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/job_image"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="8dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/job_category"
+        android:text="Photography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/job_image"
+        android:layout_below="@+id/job_title"
+        android:layout_alignBaseline="@+id/job_image"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="8dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/job_salary"
+        android:layout_width="wrap_content"
+        android:text="$300"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/job_image"
+        android:layout_below="@+id/job_category"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="8dp"
+        android:paddingBottom="10dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/time_posted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 min ago"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/job_title"
+        android:layout_toRightOf="@+id/job_title"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="end"
+        android:textSize="10dp" />
+
+
+</RelativeLayout>

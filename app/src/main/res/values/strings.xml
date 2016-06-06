@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Hollar</string>
+    <string name="app_id">798205036951557</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_post_job">PostJobActivity</string>
+    <string name="title_activity_post_job_activity_final">PostJobActivityFinal</string>
+    <string name="title_activity_address">AddressActivity</string>
+    <string name="title_activity_jobs_list">JobsListActivity</string>
+    <string name="title_activity_job_description">JobDescriptionActivity</string>
+    <string name="title_activity_otp">OTPActivity</string>
+    <string name="title_activity_post_job_activity_first">PostJobActivityFirst</string>
+    <string name="title_activity_my_profile">MyProfileActivity</string>
+    <string name="title_activity_connect">ConnectActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="title_activity_edit_posted_jobs">EditPostedJobsActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+
+</resources>
+
+
+
+

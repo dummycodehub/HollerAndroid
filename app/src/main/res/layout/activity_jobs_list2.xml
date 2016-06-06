@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar_jobs_list"
+        layout="@layout/tool_bar"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_view_background"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/tool_bar_jobs_list"
+        android:id="@+id/search_bg_view"/>
+
+
+    <com.holler.hollerapp.ContactsCompletionView
+        android:id="@+id/searchView"
+        android:layout_below="@+id/tool_bar_jobs_list"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Search jobs using tags"
+        android:background="@drawable/search_background"
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/recyclerViewJobsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeActivity"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/searchView"
+        />
+
+</RelativeLayout>

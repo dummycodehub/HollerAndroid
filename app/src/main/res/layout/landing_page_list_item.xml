@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/darker_gray">
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Test text"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/services"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Test text"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/category"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.3"
+        android:src="@drawable/repairing_maintenance_icon"/>
+
+    <Button
+        android:id="@+id/button_details"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/details"
+        android:layout_below="@+id/services"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true" />
+
+        <!-- title -->
+
+
+
+</RelativeLayout>

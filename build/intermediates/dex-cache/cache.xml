@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/Hollar/app/build/intermediates/exploded-aar/Hollar/rangeseekbar/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a2296af95c027844676211378f9bc4e10e2acfdb">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/Hollar/app/build/intermediates/pre-dexed/debug/classes-13ebd1b96d0fa321ccc839fc529f5e0bf275edaa.jar" />
+    </item>
+
+</items>

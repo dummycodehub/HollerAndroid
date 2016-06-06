@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.holler.com.PostJobActivity">
+
+    <include
+        android:id="@+id/tool_bar_post_job_b"
+        layout="@layout/tool_bar"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tool_bar_post_job_b"
+        android:layout_marginTop="-4dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleTextView"
+                android:text="POST A JOB"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:background="@drawable/psot_job_title_bg"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/tagsView"
+                android:background="@drawable/post_job_input_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/post_job_address_image"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:background="#c0c0c0"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/button_enter_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14dp"
+                    android:stateListAnimator="@null"
+                    android:textAllCaps="false"
+                    android:text="Enter Your Address"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/dateTimeLayout"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/addressView"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/post_job_input_bg"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/post_job_requested_date"/>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="fill_parent"
+                        android:background="#c0c0c0"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/button_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14dp"
+                        android:stateListAnimator="@null"
+                        android:textAllCaps="false"
+                        android:text="Requested Date"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/post_job_input_bg"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/post_job_requested_time"/>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="fill_parent"
+                        android:background="#c0c0c0"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/button_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="14dp"
+                        android:stateListAnimator="@null"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="Requested Time"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/tagsView"
+                android:background="@drawable/post_job_gender_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/post_job_gender"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent"
+                    android:background="#c0c0c0"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <Spinner
+                    android:id="@+id/gender_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:spinnerMode="dropdown"
+                    />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/button_next"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_design"
+                android:padding="12dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/addTagsLayout"
+                android:text="NEXT"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
