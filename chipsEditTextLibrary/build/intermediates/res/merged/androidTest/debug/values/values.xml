@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/rakeshkoplod/AndroidStudioProjects/Hollar/chipsEditTextLibrary/build/intermediates/bundles/debug/res/values/values.xml -->
+    <!-- From: file:/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/chipsEditTextLibrary/build/intermediates/bundles/debug/res/values/values.xml -->
     <eat-comment/>
     <string name="app_name">ChipsEditTextLibrary</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">

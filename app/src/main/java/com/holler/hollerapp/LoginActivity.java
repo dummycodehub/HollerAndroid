@@ -93,8 +93,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivityForResult(intent, 101);
             }
 
-          // Log.d("Is Valid email", "" + Utility.isValidEmail("abc@gmail.com"));
-
         }
         else if (v == buttonRegister)
         {

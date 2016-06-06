@@ -2,11 +2,130 @@
 <items version="2" >
 
     <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/classes-c007e88a040b823b44653f3dcad1d486062d02bc.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/exploded-aar/com.splitwise/tokenautocomplete/2.0.4/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7dd005d164fae7bfa76a371bd2b0e6c2a866c2d3">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/classes-3ecce7be920f5592b05452057e023ade5c1ce48a.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/classes-3dd5274d78e7dca153cbba2a643998daba66e52c.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.1.0/63735f48b82bcd24cdd33821342428252eb1ca5a/butterknife-6.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/butterknife-6.1.0-f56ac78f0838da6b4f561bf30af5ed7bf48d1fe9.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0f254ec13d6671680482d2218f01ecf14dfa93e6">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/classes-b3a1a32736f57c52d2c434600a33a7079ad00ca7.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-fee07c7816e6efe8a8625a4bf649f6039baba66a.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/classes-3c7a3d947f9cc317d450394df03c85f5aaf4dda0.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.5/686c608d1805b6d4d425ec4459e88164ffc85870/gson-2.5.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/gson-2.5-7e74acdfd6bdb905e4a04f1a273759c3c79f0c46.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/exploded-aar/HollerAndroid/chipsEditTextLibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a7ee3e750d46b629b055c3144f71094cc5682c64">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/classes-2eff2e0aa9bd65781f6cdb59534f7ae098941dde.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-77557c6877571ccfc63d64aee4ddb6bf2bfd4cee.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/exploded-aar/HollerAndroid/rangeseekbar/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c3693ce570f2e7518eb0a417110b9eb19bdbb505">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/classes-8f2f99b5a5b8b5f47ff45f04a6d10453c96e3df8.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4b868b833b0887aa48c4e581558eef4f1196f6a2">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/classes-06f81422601feddfd01b5787637f4b0e156b5b71.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/library-1.0.19-23302cc620c1b24da127bd3f6349756560f2cd57.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/classes-dc239e32ab16c2032ae98520c0ad9446daa65452.jar" />
+    </item>
+    <item
         jar="/Users/rakeshkoplod/AndroidStudioProjects/Hollar/app/build/intermediates/exploded-aar/Hollar/rangeseekbar/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="a2296af95c027844676211378f9bc4e10e2acfdb">
         <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/Hollar/app/build/intermediates/pre-dexed/debug/classes-13ebd1b96d0fa321ccc839fc529f5e0bf275edaa.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/classes-67752c55e36e707abfdc65f74b1bef7b075ff0d4.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-8e34ef25725568e2b5ae963886c92ba069b22f13.jar" />
+    </item>
+    <item
+        jar="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/libs/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/rakeshkoplod/AndroidStudioProjects/HollerAndroid/HollerAndroid/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-8cd50c5990a15256099abca768fcd8e8f89a7def.jar" />
     </item>
 
 </items>
