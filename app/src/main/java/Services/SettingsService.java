@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import Interfaces.SettingsServiceInterface;
-import Models.User;
 import Models.UserSettingDTO;
 import Network.BaseService;
 import Network.CallBack;
@@ -30,7 +29,7 @@ public class SettingsService extends BaseService implements SettingsServiceInter
         requestMap.put("userId", userId);
         requestMap.put("Content-Type", "application/json");
 
-        HTTPRequestClass getUserSettingsRequest = new HTTPRequestClass(HTTPRequestClass.Method.POST, Constants.kBaseURL + Constants.kGetUserSettings, null, null, requestMap, null, User.class);
+        HTTPRequestClass getUserSettingsRequest = new HTTPRequestClass(HTTPRequestClass.Method.POST, Constants.kBaseURL + Constants.kGetUserSettings, null, null, requestMap, null, UserSettingDTO.class);
         super.execute(getUserSettingsRequest, new CallBack<String>() {
             @Override
             public void onSuccess(String response) {
@@ -66,7 +65,7 @@ public class SettingsService extends BaseService implements SettingsServiceInter
         }*/
         final String mRequestBody = mapper.writeValueAsString(userSettingDTO);
 
-        HTTPRequestClass updateUserSettingsRequest = new HTTPRequestClass(HTTPRequestClass.Method.POST, Constants.kBaseURL + Constants.kUpdateUserSettings, null, null, headerMap, mRequestBody, User.class);
+        HTTPRequestClass updateUserSettingsRequest = new HTTPRequestClass(HTTPRequestClass.Method.POST, Constants.kBaseURL + Constants.kUpdateUserSettings, null, null, headerMap, mRequestBody, UserSettingDTO.class);
         super.execute(updateUserSettingsRequest, new CallBack<String>() {
             @Override
             public void onSuccess(String response) {

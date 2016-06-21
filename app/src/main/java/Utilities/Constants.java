@@ -35,6 +35,10 @@ public class Constants {
 
    public static String kUpdateUserSettings = "updateUserSettings";
 
+   public static String kFetchUserNotificationTemplates = "notification/user";
+
+   public static String kUserUnreadNotificationCount = "notification/getUserUnreadNotificationCount";
+
    public static String kUserObjectPreference = "userObject";
 
    public static String kSharedPreferenceConstant = "object";
