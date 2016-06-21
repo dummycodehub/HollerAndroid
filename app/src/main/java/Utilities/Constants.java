@@ -31,7 +31,9 @@ public class Constants {
 
    public static String kGetAcceptedJobs = "myPingedJobs";
 
+   public static String kGetUserSettings = "getUserSettings";
 
+   public static String kUpdateUserSettings = "updateUserSettings";
 
    public static String kUserObjectPreference = "userObject";
 
